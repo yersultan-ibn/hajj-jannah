@@ -12,7 +12,7 @@ const Home: NextPage = () => {
 
   return (
     <Fragment>
-      <Box width="960px" pt='36px'>
+      <Box>
         <Flex
           borderRadius="md"
           overflow="hidden"

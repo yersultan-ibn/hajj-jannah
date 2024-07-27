@@ -18,7 +18,6 @@ export const MainLayout: FC<Props> = ({ children }) => {
           backgroundColor="#F5F6F7"
           minH="100vh"
           alignItems="flex-start"
-          pb="40px"
         >
           {children}
         </Center>
