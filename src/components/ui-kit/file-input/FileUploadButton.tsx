@@ -1,7 +1,6 @@
 import React, { FC } from "react";
 import { AttachmentIcon } from "@chakra-ui/icons";
 import { Box, Input, InputGroup, Text } from "@chakra-ui/react";
-import { useTranslation } from "react-i18next";
 
 interface Props {
   onChange: (event: React.ChangeEvent<HTMLInputElement>, index: number) => void;
@@ -14,7 +13,6 @@ interface Props {
 }
 
 export const FileUploadButton: FC<Props> = ({ onChange, index, isMultiple, name, isDisabled, accept, placeholder }) => {
-  const { t } = useTranslation("common", { keyPrefix: "fileInput" });
 
   return (
     <InputGroup>
@@ -50,7 +48,8 @@ export const FileUploadButton: FC<Props> = ({ onChange, index, isMultiple, name,
           fontSize="md"
         />
         <Text color="grey.primary">
-          {placeholder || (isMultiple ? (index > 0 ? t('uploadMore') : t('uploadFiles')) : t('uploadFile'))}
+          {placeholder}
+          {/* {placeholder || (isMultiple ? (index > 0 ? t('uploadMore') : t('uploadFiles')) : t('uploadFile'))} */}
         </Text>
         <AttachmentIcon color={isDisabled ? 'grey' : 'blue.main'} />
       </Box>

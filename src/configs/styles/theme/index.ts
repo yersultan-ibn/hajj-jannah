@@ -2,8 +2,8 @@ import { extendTheme } from "@chakra-ui/react";
 
 import { config, breakpoints } from "./config";
 import { Badge } from "src/configs/styles/components/Badge";
-import { FormError} from "src/configs/styles/components/Form";
-import { Checkbox} from "src/configs/styles/components/Checkbox";
+import { FormError } from "src/configs/styles/components/Form";
+import { Checkbox } from "src/configs/styles/components/Checkbox";
 
 import 'react-datepicker/dist/react-datepicker.css';
 
@@ -12,6 +12,10 @@ export const theme = extendTheme({
     html: {
       fontSize: "14px",
     },
+  },
+  fonts: {
+    heading: "Gotham-Book, GretaArabic-Light, OpenSans-Regular, system-ui, Arial, Helvetica, sans-serif",
+    body: "Gotham-Book, GretaArabic-Light, OpenSans-Regular, system-ui, Arial, Helvetica, sans-serif",
   },
   components: {
     Badge,
