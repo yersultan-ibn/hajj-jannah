@@ -45,7 +45,7 @@ const Home: NextPage = () => {
                 color="white"
                 py='50px'
               >
-                Совершить Хадж
+                Hajj
               </Text>
             </Button>
           </Box>
@@ -75,7 +75,7 @@ const Home: NextPage = () => {
                 color="white"
                 py='50px'
               >
-                Совершить Умру
+                Umrah
               </Text>
             </Button>
           </Box>
