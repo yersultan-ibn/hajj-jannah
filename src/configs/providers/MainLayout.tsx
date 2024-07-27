@@ -1,11 +1,5 @@
 import React, { FC, Fragment, ReactElement } from "react";
 import { Box, Center } from "@chakra-ui/react";
-import { registerLocale } from "react-datepicker";
-import ru from 'date-fns/locale/ru';
-
-// @ts-ignore
-registerLocale('ru', ru);
-
 interface Props {
   children: ReactElement;
 }
