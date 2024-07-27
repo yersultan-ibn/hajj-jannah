@@ -40,10 +40,11 @@ const Home: NextPage = () => {
               padding='0'
             >
               <Text
-                bg="rgb(25 25 25 / 54%)"
                 w='100%'
                 color="white"
                 py='50px'
+                fontSize={100}
+                textShadow="4px 4px 4px #070707"
               >
                 Hajj
               </Text>
@@ -70,10 +71,11 @@ const Home: NextPage = () => {
               padding='0'
             >
               <Text
-                bg="rgb(25 25 25 / 54%)"
                 w='100%'
                 color="white"
                 py='50px'
+                textShadow="4px 4px 4px #070707"
+                fontSize={100}
               >
                 Umrah
               </Text>
