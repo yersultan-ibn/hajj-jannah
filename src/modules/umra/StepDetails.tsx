@@ -1,3 +1,4 @@
-export const StepDetails = () => {
 
+export const StepDetails = () => {
+return <></>
 }
