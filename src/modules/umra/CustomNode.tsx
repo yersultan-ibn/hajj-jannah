@@ -67,8 +67,9 @@ export const CustomNode = (props: Props) => {
     >
       <Popover
         initialFocusRef={initialFocusRef}
-        placement="bottom"
+        placement="auto"
         closeOnBlur={false}
+        trigger="hover"
       >
         {/* <NodeToolbar isVisible>
         Toolbar

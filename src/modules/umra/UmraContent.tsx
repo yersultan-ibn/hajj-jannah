@@ -71,7 +71,7 @@ const initialNodes = [
   },
   {
     id: "5",
-    position: { x: 160, y: 670 },
+    position: { x: 160, y: 750 },
     data: {
       label: "5. Clip and Shave hair",
       width: 120,
