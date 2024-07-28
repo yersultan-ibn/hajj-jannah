@@ -8,7 +8,6 @@ const NodeStyle = {
   justifyContent: "center",
   borderRadius: 15,
   paddingTop: 10,
-  textAlign: "center",
   fontSize: 10,
 };
 
@@ -39,6 +38,7 @@ export const CustomNode = ({ data }: Props) => {
         backgroundPosition: data.bg.position ? data.bg.position : "center 80%",
         width: data.width,
         height: data.height,
+        textAlign: "center",
       }}
     >
       {/* <NodeToolbar isVisible>
