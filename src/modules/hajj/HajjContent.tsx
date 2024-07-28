@@ -3,6 +3,8 @@ import { ReactFlow } from "@xyflow/react";
 import { CustomNode } from "../umra/CustomNode";
 
 import "@xyflow/react/dist/style.css";
+import { Button } from "@chakra-ui/react";
+import Link from "next/link";
 
 const root = {
   background: "url('./bg-1.webp')",
@@ -295,6 +297,9 @@ export const HajjContent = () => {
   const nodeTypes = useMemo(() => ({ custom: CustomNode }), []);
   return (
     <div style={root}>
+      <Button style={{margin: 10}}>
+        <Link href="/">Home</Link>
+      </Button>
       <div style={{ width: "100vw", height: "100vh" }}>
         <ReactFlow
           nodes={initialNodes}
