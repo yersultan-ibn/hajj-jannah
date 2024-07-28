@@ -2,3 +2,8 @@ body{
   font-family: "Gotham-Book","GretaArabic-Light","OpenSans-Regular",system-ui,Arial,Helvetica,sans-serif!important;
   color: #23282d;
 }
+
+.react-flow__edge-path{
+  stroke: #e0e0e0f0 !important;
+  stroke-width: 7px !important
+}
