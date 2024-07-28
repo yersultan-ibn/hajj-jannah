@@ -21,7 +21,8 @@ const initialNodes = [
       height: 100,
       bg: {
         url: "steps/step-1.svg",
-        size: 40,
+        size: 43,
+        position: "center 150%"
       },
     },
     type: "custom",
@@ -84,7 +85,7 @@ const initialNodes = [
   },
 ];
 const initialEdges = [
-  { id: "e1-2", source: "1", target: "2", animated: true },
+  { id: "e1-2", source: "1", target: "2", animated: true, },
   { id: "e2-3", source: "2", target: "3", animated: true },
   { id: "e3-5", source: "3", target: "4", animated: true },
   { id: "e4-5", source: "4", target: "5", animated: true },
