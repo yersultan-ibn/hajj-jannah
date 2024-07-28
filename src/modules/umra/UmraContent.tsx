@@ -14,9 +14,11 @@ const root = {
 const initialNodes = [
   {
     id: "1",
-    position: { x: 75, y: 25 },
+    position: { x: 75, y: 50 },
     data: {
       label: "1. Intention",
+      width: 100,
+      height: 100,
       bg: {
         url: "steps/step-1.svg",
         size: 40,
@@ -26,9 +28,11 @@ const initialNodes = [
   },
   {
     id: "2",
-    position: { x: 250, y: 100 },
+    position: { x: 250, y: 200 },
     data: {
       label: "2. Umrah Ihram",
+      width: 100,
+      height: 100,
       bg: {
         url: "steps/step-2.svg",
         size: 40,
@@ -38,9 +42,11 @@ const initialNodes = [
   },
   {
     id: "3",
-    position: { x: 75, y: 180 },
+    position: { x: 75, y: 350 },
     data: {
       label: "3. Tawaf",
+      width: 100,
+      height: 100,
       bg: {
         url: "steps/step-3.svg",
         size: 60,
@@ -50,9 +56,11 @@ const initialNodes = [
   },
   {
     id: "4",
-    position: { x: 250, y: 280 },
+    position: { x: 250, y: 500 },
     data: {
       label: "4. Safa wa Marwa",
+      width: 100,
+      height: 100,
       bg: {
         url: "steps/step-4.svg",
         size: 70,
@@ -62,9 +70,11 @@ const initialNodes = [
   },
   {
     id: "5",
-    position: { x: 170, y: 400 },
+    position: { x: 160, y: 670 },
     data: {
       label: "5. Clip and Shave hair",
+      width: 120,
+      height: 120,
       bg: {
         url: "steps/step-5.svg",
         size: 40,
