@@ -7,3 +7,7 @@ body{
   stroke: black !important;
   stroke-width: 5px !important
 }
+
+.react-flow__handle {
+  visibility: hidden;
+}
