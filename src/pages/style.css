@@ -4,6 +4,6 @@ body{
 }
 
 .react-flow__edge-path{
-  stroke: #409e56f0 !important;
+  stroke: black !important;
   stroke-width: 5px !important
 }
