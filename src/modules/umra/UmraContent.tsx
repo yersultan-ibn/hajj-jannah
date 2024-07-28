@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import { ReactFlow } from "@xyflow/react";
 import { CustomNode } from "./CustomNode";
 
@@ -93,7 +93,6 @@ const initialEdges = [
 
 export const UmraContent = () => {
   const nodeTypes = useMemo(() => ({ custom: CustomNode }), []);
-
   return (
     <div style={root}>
       <div style={{ width: "100vw", height: "100vh" }}>

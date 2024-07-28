@@ -21,6 +21,7 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import { useRef } from "react";
+import { useRouter } from "next/router";
 
 const NodeStyle: any = {
   position: "relative",
@@ -62,6 +63,8 @@ export const CustomNode = (props: Props) => {
   const { data } = props
   const { isOpen, onOpen, onClose } = useDisclosure()
   const initialFocusRef: any = useRef();
+
+  const router = useRouter()
 
   return (
     <div
@@ -118,7 +121,9 @@ export const CustomNode = (props: Props) => {
             <Box fontSize="sm">Step {props.id} of 5</Box>
             <ButtonGroup size="sm">
               <Button colorScheme="green" onClick={onOpen}>Details</Button>
-              <Button colorScheme="blue" ref={initialFocusRef}>
+              <Button colorScheme="blue" ref={initialFocusRef} onClick={() => {
+                router.push("/test")
+              }}>
                 Practice
               </Button>
             </ButtonGroup>

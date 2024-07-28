@@ -77,7 +77,7 @@ export const Quiz: React.FC<QuizProps> = ({ stage }) => {
       updatedAnswers[currentQuestionIndex] = currentAnswer;
       setSelectedAnswers(updatedAnswers);
       setCurrentAnswer(null);
-      
+
       if (currentQuestionIndex < stageData.questions.length - 1) {
         setCurrentQuestionIndex(currentQuestionIndex + 1);
       } else {
@@ -108,14 +108,14 @@ export const Quiz: React.FC<QuizProps> = ({ stage }) => {
       <div style={root}>
         <div style={quizCard}>
           <h2 style={{ fontSize: 24 }}>Your result: {score} of {stageData.questions.length}</h2>
-          <Button colorScheme='blue' size={'lg'} style={{fontSize: 16}} onClick={() => {}}><Link href="/">Back</Link></Button>
+          <Button colorScheme='blue' size={'lg'} style={{fontSize: 16}} onClick={() => {}}><Link href="/umra">Back</Link></Button>
         </div>
       </div>
     );
   }
 
   console.log(stageData);
-  
+
 
   const currentQuestion = stageData.questions[currentQuestionIndex];
 
