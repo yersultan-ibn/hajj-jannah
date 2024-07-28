@@ -71,7 +71,7 @@ const initialNodes = [
   },
   {
     id: "5",
-    position: { x: 160, y: 750 },
+    position: { x: 75, y: 750 },
     data: {
       label: "5. Clip and Shave hair",
       width: 120,
@@ -85,7 +85,7 @@ const initialNodes = [
   },
   {
     id: "6",
-    position: { x: 160, y: 950 },
+    position: { x: 250, y: 950 },
     data: {
       label: "6. Resting & Praying",
       width: 120,
@@ -99,7 +99,164 @@ const initialNodes = [
   },
   {
     id: "7",
-    position: { x: 160, y: 1150 },
+    position: { x: 75, y: 1150 },
+    data: {
+      label: "7. Enter State ofIhram",
+      width: 120,
+      height: 120,
+      bg: {
+        url: "steps/step-7.svg",
+        size: 40,
+      },
+    },
+    type: "custom",
+  },
+  {
+    id: "8",
+    position: { x: 250, y: 1300 },
+    data: {
+      label: "8. Enter State ofIhram",
+      width: 120,
+      height: 120,
+      bg: {
+        url: "steps/step-7.svg",
+        size: 40,
+      },
+    },
+    type: "custom",
+  },{
+    id: "9",
+    position: { x: 75, y: 1450 },
+    data: {
+      label: "9. Enter State ofIhram",
+      width: 120,
+      height: 120,
+      bg: {
+        url: "steps/step-7.svg",
+        size: 40,
+      },
+    },
+    type: "custom",
+  },{
+    id: "10",
+    position: { x: 250, y: 1600 },
+    data: {
+      label: "10. Enter State ofIhram",
+      width: 120,
+      height: 120,
+      bg: {
+        url: "steps/step-7.svg",
+        size: 40,
+      },
+    },
+    type: "custom",
+  },{
+    id: "11",
+    position: { x: 70, y: 1800 },
+    data: {
+      label: "11. Enter State ofIhram",
+      width: 120,
+      height: 120,
+      bg: {
+        url: "steps/step-7.svg",
+        size: 40,
+      },
+    },
+    type: "custom",
+  },{
+    id: "12",
+    position: { x: 250, y: 2000 },
+    data: {
+      label: "7. Enter State ofIhram",
+      width: 120,
+      height: 120,
+      bg: {
+        url: "steps/step-7.svg",
+        size: 40,
+      },
+    },
+    type: "custom",
+  },{
+    id: "13",
+    position: { x: 75, y: 2200 },
+    data: {
+      label: "7. Enter State ofIhram",
+      width: 120,
+      height: 120,
+      bg: {
+        url: "steps/step-7.svg",
+        size: 40,
+      },
+    },
+    type: "custom",
+  },{
+    id: "14",
+    position: { x: 250, y: 2400 },
+    data: {
+      label: "7. Enter State ofIhram",
+      width: 120,
+      height: 120,
+      bg: {
+        url: "steps/step-7.svg",
+        size: 40,
+      },
+    },
+    type: "custom",
+  },{
+    id: "15",
+    position: { x: 70, y: 2600 },
+    data: {
+      label: "7. Enter State ofIhram",
+      width: 120,
+      height: 120,
+      bg: {
+        url: "steps/step-7.svg",
+        size: 40,
+      },
+    },
+    type: "custom",
+  },{
+    id: "16",
+    position: { x: 250, y: 2800 },
+    data: {
+      label: "7. Enter State ofIhram",
+      width: 120,
+      height: 120,
+      bg: {
+        url: "steps/step-7.svg",
+        size: 40,
+      },
+    },
+    type: "custom",
+  },{
+    id: "17",
+    position: { x: 70, y: 3000 },
+    data: {
+      label: "7. Enter State ofIhram",
+      width: 120,
+      height: 120,
+      bg: {
+        url: "steps/step-7.svg",
+        size: 40,
+      },
+    },
+    type: "custom",
+  },{
+    id: "18",
+    position: { x: 250, y: 3200 },
+    data: {
+      label: "7. Enter State ofIhram",
+      width: 120,
+      height: 120,
+      bg: {
+        url: "steps/step-7.svg",
+        size: 40,
+      },
+    },
+    type: "custom",
+  },{
+    id: "19",
+    position: { x: 70, y: 3400 },
     data: {
       label: "7. Enter State ofIhram",
       width: 120,
@@ -119,6 +276,18 @@ const initialEdges = [
   { id: "e4-5", source: "4", target: "5", animated: true },
   { id: "e5-6", source: "5", target: "6", animated: true },
   { id: "e6-7", source: "6", target: "7", animated: true },
+  { id: "e7-8", source: "7", target: "8", animated: true },
+  { id: "e8-7", source: "8", target: "9", animated: true },
+  { id: "e9-9", source: "9", target: "10", animated: true },
+  { id: "e10-10", source: "10", target: "11", animated: true },
+  { id: "e11-11", source: "11", target: "12", animated: true },
+  { id: "e12-12", source: "12", target: "13", animated: true },
+  { id: "e13-13", source: "13", target: "14", animated: true },
+  { id: "e14-14", source: "14", target: "15", animated: true },
+  { id: "e15-15", source: "15", target: "16", animated: true },
+  { id: "e16-17", source: "16", target: "17", animated: true },
+  { id: "e17-18", source: "17", target: "18", animated: true },
+  { id: "e18-19", source: "18", target: "19", animated: true },
 
 ];
 
