@@ -12,11 +12,12 @@ const Home: NextPage = () => {
 
   return (
     <Fragment>
-      <Box>
+      <Box width="100%">
         <Flex
           borderRadius="md"
           overflow="hidden"
           justifyContent="center"
+          width={"100%"}
         >
           <Box
             flex="1"
@@ -26,7 +27,6 @@ const Home: NextPage = () => {
             borderRadius="md"
             h='100vh'
             w='100%'
-            mr='20px'
           >
             <Button
               onClick={() => handleNavigation('/hajj')}
@@ -43,7 +43,7 @@ const Home: NextPage = () => {
                 w='100%'
                 color="white"
                 py='50px'
-                fontSize={100}
+                fontSize={50}
                 textShadow="4px 4px 4px #070707"
               >
                 Hajj
@@ -75,7 +75,7 @@ const Home: NextPage = () => {
                 color="white"
                 py='50px'
                 textShadow="4px 4px 4px #070707"
-                fontSize={100}
+                fontSize={50}
               >
                 Umrah
               </Text>
