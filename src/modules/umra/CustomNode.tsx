@@ -3,6 +3,13 @@ import {
   Box,
   Button,
   ButtonGroup,
+  Modal,
+  ModalBody,
+  ModalCloseButton,
+  ModalContent,
+  ModalFooter,
+  ModalHeader,
+  ModalOverlay,
   Popover,
   PopoverArrow,
   PopoverBody,
@@ -11,8 +18,9 @@ import {
   PopoverFooter,
   PopoverHeader,
   PopoverTrigger,
+  useDisclosure,
 } from "@chakra-ui/react";
-import React from "react";
+import { useRef } from "react";
 
 const NodeStyle: any = {
   position: "relative",
@@ -52,7 +60,8 @@ type Props = {
 };
 export const CustomNode = (props: Props) => {
   const { data } = props
-  const initialFocusRef: any = React.useRef();
+  const { isOpen, onOpen, onClose } = useDisclosure()
+  const initialFocusRef: any = useRef();
 
   return (
     <div
@@ -108,7 +117,7 @@ export const CustomNode = (props: Props) => {
           >
             <Box fontSize="sm">Step {props.id} of 5</Box>
             <ButtonGroup size="sm">
-              <Button colorScheme="green">Details</Button>
+              <Button colorScheme="green" onClick={onOpen}>Details</Button>
               <Button colorScheme="blue" ref={initialFocusRef}>
                 Practice
               </Button>
@@ -116,6 +125,25 @@ export const CustomNode = (props: Props) => {
           </PopoverFooter>
         </PopoverContent>
       </Popover>
+
+     <Modal onClose={onClose} size='md' isOpen={isOpen}>
+        <ModalOverlay />
+        <ModalContent>
+          <ModalHeader>{data.label}</ModalHeader>
+          <ModalCloseButton />
+          <ModalBody>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, ipsa consequatur nostrum quo, delectus iusto eos suscipit ipsam provident repudiandae odio laudantium ipsum amet, impedit illum dolorem id quidem. Architecto.
+            Ducimus nobis voluptates consectetur blanditiis impedit perspiciatis libero eius dignissimos nesciunt saepe voluptatum eligendi qui placeat eaque inventore earum, optio voluptate itaque officiis modi veritatis recusandae. Quae nemo optio delectus.
+            Veritatis iure excepturi sapiente tenetur porro officia id rerum! Nesciunt distinctio doloribus quos facere voluptatibus, beatae corrupti dolorum sequi, impedit in hic necessitatibus minus molestiae dolore voluptatum laboriosam amet illo?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, similique? Culpa deserunt quia, perspiciatis nesciunt assumenda aliquam neque, tempore consectetur quaerat aut ipsam hic, dolores molestias autem asperiores! Voluptate, laboriosam.
+            Repellendus nostrum officia libero, earum inventore laudantium quasi soluta, laboriosam, repudiandae sed non eaque obcaecati cum rerum maxime possimus explicabo aut perspiciatis dolore nulla animi iste suscipit. Voluptate, repudiandae ducimus.
+            Similique modi animi maxime atque porro culpa corrupti esse eos ullam molestiae debitis eum cumque laudantium, veritatis, officia, repellendus voluptatum quaerat nisi odit reiciendis quidem nostrum optio! Debitis, magni repudiandae?
+          </ModalBody>
+          <ModalFooter>
+            <Button onClick={onClose}>Close</Button>
+          </ModalFooter>
+        </ModalContent>
+      </Modal>
     </div>
   );
 };
